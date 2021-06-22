@@ -4,6 +4,7 @@
     <h1>My Cart</h1>
   </header>
 
+  <% if enhanced_cart[0] %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -14,8 +15,11 @@
           <th>Price</th>
         </tr>
       </thead>
+      <% else %>
+      <p class='alert alert-info'>Oops! Looks like your cart is currently empty. <a href="/">Back to home</a></p>
+      <% end %>
       <tbody>
-        <% enhanced_cart.each do |item| %>
+        <% if enhanced_cart[0] && enhanced_cart.each do |item| %>
           <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
         <% end %>
       </tbody>
@@ -45,6 +49,7 @@
           data-email="kvirani@gmail.com"
           data-currency="cad">
         </script>
+      <% end %>
       <% end %>
     </div>
   </div>
