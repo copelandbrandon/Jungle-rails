@@ -2,9 +2,20 @@
 
   <header class="page-header">
     <h1>Order #<%= @order.id %></h1>
-  </header>
-
-  <div class="order-summary jumbotron">
+    </header>
+    <div class="order-summary jumbotron">
+    <% @product = @order.line_items.each do |item| %>
+        <% @products.each do |product| %>
+          <% if product.id == item.product_id %>
+          <% @total += product.price%>
+          <table class="table table-bordered">
+            <%= render 'line_item',  product: item, selected_item: product %>
+            </table>
+        <% end %>
+      <% end %>
+    <% end %>
+    <h3>Order total: <%= humanized_money_with_symbol @total%></h3>
+    <h4>Confirmation sent to: <%= @order.email %></h4>
     <h4>Thank you for your order!</h4>
   </div>
 
