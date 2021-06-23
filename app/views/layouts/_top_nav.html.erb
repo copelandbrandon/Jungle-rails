@@ -19,6 +19,9 @@
             Categories
             <span class="caret"></span>
           </a>
+          <li>
+          <%= link_to 'About Us', [:about, :index] %>
+          </li>
           <ul class="dropdown-menu">
             <% Category.all.each do |category| %>
               <li><%= link_to category.name, category %></li>
