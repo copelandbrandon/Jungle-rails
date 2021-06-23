@@ -27,6 +27,20 @@ main section.categories-show {
         display: block;
       }
 
+      .badge.badge-danger {
+        background-color: red;
+        opacity: 55%;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 14px;
+        line-height: 1.42857143;
+      }
+
       footer {
         position: absolute;
         bottom: 0;
