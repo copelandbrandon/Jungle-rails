@@ -9,13 +9,15 @@ starter code provided by lighthouse labs.
 ## Screenshots
 -----------------------------------------
 ### Home page
-![Home_screenshot]()
+![Home_screenshot](https://github.com/copelandbrandon/Jungle-rails/blob/master/public/images/home_page_screenshot.png?raw=true)
 
 -----------------------------------------
-![Details_screenshot]()
+### Product Details page
+![Details_screenshot](https://github.com/copelandbrandon/Jungle-rails/blob/master/public/images/product_details_screenshot.png?raw=true)
 
 -----------------------------------------
-![Cart_screenshot]()
+### My Cart page
+![Cart_screenshot](https://github.com/copelandbrandon/Jungle-rails/blob/master/public/images/my_cart_screenshot.png?raw=true)
 
 -----------------------------------------
 
