@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by means of a real world example where you inherit an existing codebase and complete tickets for bugs and missing features.
 
 ## Created as a project for Lighthouse Labs
 
